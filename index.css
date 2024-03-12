@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter";
+  color: rgb(55, 53, 47);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.top-background {
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 78%;
+}
+
+.photo-img {
+  margin-top: -125px;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.photo-img:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 5px 5px rgba(59, 59, 59, 0.2);
+}
+
+.heading-primary {
+  font-weight: 800;
+  font-size: 40px;
+  margin: 35px 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 5px;
+}
+
+.location {
+  color: rgb(120, 119, 116);
+  font-size: 14px;
+}
+
+.contacts {
+  color: rgb(120, 119, 116);
+  font-size: 18px;
+  padding-left: 3px;
+  font-weight: 500;
+}
+
+.contact-link:visited,
+.contact-link:link {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(51, 126, 169);
+  border-bottom: 1px solid rgba(55, 53, 47, 0.4);
+  transition: all 0.5s;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  color: rgba(51, 126, 169, 0.562);
+}
+
+.about {
+  background-color: rgb(237, 243, 236);
+  border-radius: 5px;
+  margin-top: 25px;
+  padding: 10px 30px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.heading-secondary {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.grid--4columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.project-img {
+  height: 250px;
+  width: 500px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px;
+
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.project-img:hover {
+  transform: scale(0.95);
+}
+
+ul {
+  list-style: none;
+  line-height: 1.5;
+}
+
+.footer {
+  /* background: linear-gradient(
+    to right,
+    rgba(178, 226, 209, 0.89),
+    rgba(231, 180, 139, 0.89)
+  ); */
+  padding: 40px;
+  margin-top: 30px;
+  animation-name: changeColor;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.footer p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: rgba(178, 226, 209, 0.89);
+  }
+  50% {
+    background-color: rgba(231, 180, 139, 0.89);
+  }
+  100% {
+    background-color: rgba(178, 226, 209, 0.89);
+  }
+}
